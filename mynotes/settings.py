@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-r^833mykz-_07ucq^*0p-hat*2^zl_erh3ooyz9t8dijbgbs5n
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://notesapp-qiydaar.netlify.app/']
+ALLOWED_HOSTS = ['127.0.0.1','https://backendnotes-qiydaar-4b56dd3b16f2.herokuapp.com']
 
 
 # Application definition
@@ -134,5 +134,6 @@ STATIC_ROOT = str(BASE_DIR / "staticfiles")
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3001",  # Use http instead of https for localhost
-]
+"http://localhost:3000", # Use http instead of https for localhost
+ ]
+# CORS_ORIGIN_ALLOW_ALL = True
